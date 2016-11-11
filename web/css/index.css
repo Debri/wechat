@@ -1,0 +1,175 @@
+body,.y_title{
+	padding:0;
+	margin:0;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+}
+.head{
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	z-index: 999;
+}
+.y_title{
+	height:40px;
+	text-align:center;
+	background:#259EED;
+	font-size:20px;
+	line-height:40px;
+	font-family:"微软雅黑";
+	color:#fff;
+	font-weight: bolder;
+}
+.y_nav{
+	width:100%;
+	height:60px;
+	background:#fff;
+}
+.y_button{
+	height:20px;
+	width:200px;
+	margin:0 auto;
+	padding:0 auto;
+}
+.y_text{
+	margin:0 auto;
+	padding:10px 10px 0 10px;
+	font-size:18px;
+	line-height:35px;
+	font-family:"微软雅黑";
+	display: inline-block;
+	color:#2E3D68;
+}
+.border_bottom{
+	border-bottom: 2px solid #8D9FB6;
+}
+.y_button a{
+	text-decoration:none;
+}
+.y_button a:link{
+	text-decoration:none;
+	color:#2E3D68;
+	display:inline-block;
+}
+.y_button a:visited{
+	text-decoration:none;
+	color:#2E3D68;
+	display:inline-block;
+	} /* 已访问的链接 */
+.y_button a:hover{text-decoration:none;} /* 鼠标在链接上 */ 
+.y_button a:active{
+	text-decoration:none;
+	color:#2E3D68;
+	display:inline-block;
+} 
+
+/*公告样式*/
+.y_notice{
+	float:left;
+	margin:110px 0 10px 0;
+	padding:0 auto;
+	width:100%;
+	height:100px;
+	background: #E0DDB2;
+}
+.y_notice img{
+	display: inline;
+	padding:0;
+	margin:0 0 0 45px;
+}
+.y_noticeTitle{
+	margin:0 0 0 2px;
+	color:#ee4242;
+	font-size:15px;
+	font-family:"微软雅黑";
+	display:inline-block;
+}
+.y_noticeTextTitle{
+	font-size:15px;
+	font-weight: bolder;
+	color:#259EED;
+	padding:5px 0 5px 40px;
+}
+.y_noticeText{
+	font-size:13px;
+	padding:0 8px 8px 20px;
+	font-family:"微软雅黑";
+	text-indent:2em;
+}
+/*点歌按钮*/
+.y_click{
+	width:65px;
+	height:65px;
+	border-radius:40px;
+	background:#F38181;
+	border:1px solid #F38181;
+	font-family:"微软雅黑";
+	font-size:20px;
+	position: fixed;
+	bottom:30px;
+	right:20px;
+	z-index: 999;
+}
+.y_click p{
+	font-family:"微软雅黑";
+	font-size:18px;
+	position:relative;
+	margin:19px 0 0 13px;
+	color:#fff;
+}
+/*歌单样式*/
+.y_song{
+	float:left;
+	background:#fff;
+	height:150px;
+	width:100%;
+	margin:5px 0 5px 0;
+	border:1px solid #ccc;
+}
+.y_songTitle{
+	height:40px;
+	width:100%;
+	border:1px solid #ccc;
+	background:#259EED;
+	color:#fff;
+}
+.y_songTitle img{
+	float:left;
+	margin:4px 5px 0 20px;
+}
+/*歌名*/
+.y_songName{
+	float:left;
+	margin:5px 0 0 0;
+	line-height: 26px;
+	font-size:17px;
+	font-weight: bolder;
+	font-family: "微软雅黑"; 
+}
+.y-songcontent{
+	padding:3px 0 0 20px;
+}
+.y_personName{
+	margin:4px 0 0 0;
+	font-size:15px;
+	font-family: "微软雅黑";
+}
+.y_forPerson{
+	font-size:13px;
+	font-family: "微软雅黑";
+	margin:3px 0 0 0;
+}
+.y_songMessage{
+	font-size: 13px;
+	font-family:"微软雅黑";
+	text-indent: 2em;
+	margin:3px 0 3px 0;
+}
+/*时间样式*/
+.y_time{
+	position: absolute;
+	font-size: 13px;
+	font-family: "微软雅黑";
+	right:18px;
+}

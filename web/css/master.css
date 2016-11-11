@@ -1,0 +1,149 @@
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+-webkit-appearance: none;
+}
+input, button {
+	border-radius: 0%;
+	border: 1px solid #259EED;
+	height: 20px;
+	width: 30%;
+}
+li {
+	list-style: none;
+}
+.head{
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	z-index: 2;
+}
+.y_title{
+	height:40px;
+	text-align:center;
+	background:#259EED;
+	font-size:20px;
+	line-height:40px;
+	font-family:"微软雅黑";
+	color:#fff;
+	font-weight: bolder;
+}
+#notice {
+	margin-top: 15%;
+	margin-bottom: 5%;
+}
+#publish {
+	background-color: #259EED;
+	margin-top: 20%;
+	color: #fff;
+	/*display: none;*/
+}
+#pub_part {
+	display: none;
+	margin-left: 15%;
+	font-size: 12px;
+}
+#pub_part input {
+	width: 72%;
+}
+#pub_part button {
+	background-color: #259EED;
+	color: #fff;
+}
+.reset {
+	margin-left: 10%;
+}
+.user {
+	position: relative;
+/*	height: 180px;*/
+	width: 100%;
+	margin-top: 5%;
+	border-top: 1px dashed #ccc;
+}
+.user .con_header {
+	height: 30px;
+	position: absolute;
+}
+.con_header p {
+	display: inline-block;
+	font-family: "微软雅黑";
+	width: 100px;
+	font-size: 14px;
+	margin-left: 5%;
+	line-height: 30px;
+}
+.pass {
+	position: relative;
+	right: -5%;
+	top: -2px;
+	color: #fff;
+	background-color: #259EED;
+}
+.finish {
+	position: relative;
+	left: 90%;
+	top: -42px;
+	color: #fff;
+	background-color: #259EED;
+}
+.user .con_content {
+	height: 150px;
+	font-size: 13px;
+	margin-top: 30px;
+}
+.left {
+	float: left;
+	width: 30%;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 15px;
+	text-align: center;
+}
+.song {
+	width: 80px;
+	height: 80px;
+	border: 2px solid #ccc;
+	border-radius: 40px;
+}
+.song p {
+	margin-top: 16px;
+	width: 90%;
+	font-size: 13px;
+	margin-top: 30%;
+	margin-bottom: 30%;
+}
+.singer {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #ccc;
+	border-radius: 30px;
+	margin-left: 70px;
+	margin-top: -16px;
+}
+.singer p {
+	margin-top: 35%;
+	margin-bottom: 35%;
+	width: 90%;
+	font-size: 14px;
+	text-align: center;
+	margin-left: 8%;
+}
+.right {
+	float: left;
+	width: 60%;
+	margin-left: 20px;
+}
+.right p {
+	margin-bottom: -3%;
+}
+.words {
+	width: 80%;
+	margin-left: 20%;
+	line-height: 20px;
+ } 
+.date {
+  	text-align: right;
+  	margin-right: 5%;
+  }
