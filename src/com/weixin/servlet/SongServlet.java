@@ -70,7 +70,7 @@ public class SongServlet extends HttpServlet {
             /*System.out.println("------id----" + id);
             System.out.println("dovarify");*/
             songService.doVerify(id, 1);
-            forword="/master.jsp";
+            forword = "/master.jsp";
 
         } else if (action.equals("doDelete")) {//删除点歌
             songService.deleteById(Integer.parseInt(req.getParameter("id")));
@@ -104,7 +104,7 @@ public class SongServlet extends HttpServlet {
             list = songService.masterFind();
             req.getSession().setAttribute("master", list);
             forword = "/master.jsp";
-        } else  {
+        } else {
             req.getRequestDispatcher("/index.jsp").forward(req, resp);
             return;
         }

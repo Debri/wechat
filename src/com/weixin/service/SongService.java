@@ -22,7 +22,7 @@ public class SongService {
         Connection connection = null;
         ResultSet resultSet = null;
         List<Song> list = new ArrayList<Song>();
-        String sql = "select * from song where status=1 or status=0 ORDER BY id DESC ";
+        String sql = "select * from song where status=1 or status=0 ORDER BY id DESC limit 60";
         try {
             connection = DBUtils.getConnection();
             statement = connection.prepareStatement(sql);
@@ -102,7 +102,7 @@ public class SongService {
         PreparedStatement statement = null;
         Connection connection = null;
         List<Song> list = new ArrayList<Song>();
-        String sql = " select * from song where status = ? order by id desc";
+        String sql = " select * from song where status = ?  order by id desc limit 40";
         ResultSet resultSet = null;
         try {
             connection = DBUtils.getConnection();

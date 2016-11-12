@@ -9,9 +9,11 @@ import java.sql.*;
  */
 public class DBUtils {
     private static final String DRIVER = "com.mysql.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://localhost:3306/weixin";
+    //private static final String URL = "jdbc:mysql://localhost:3306/weixin";
+    private static final String URL = "jdbc:mysql://teangcmvrrnm.mysql.sae.sina.com.cn:10217/weixin";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "123";
+    //private static final String PASSWORD = "123";
+    private static final String PASSWORD = "geek2306";
 
     public static Connection getConnection() {
         Connection connection = null;
