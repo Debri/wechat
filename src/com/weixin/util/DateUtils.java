@@ -9,8 +9,13 @@ import java.util.Date;
  */
 public class DateUtils {
 
-    public static String toMin() {
+    /*public static String toMin() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm");
+        return sdf.format(new Date());
+    }*/
+    public static String toMin() {
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
         return sdf.format(new Date());
     }
 }

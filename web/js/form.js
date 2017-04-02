@@ -104,17 +104,21 @@ window.onload = function () {
     SongSubmit.onclick = function () {
         console.log($('#form').serialize());
         if (Messageswitch && ForNameswitch && PersonNameswitch && SongNameSwitch && NameIimit) {
+            // alert("成功，等待管理员审核");
             $.ajax({
-                //url: 'demo.php',
+                //url: 'demo',
                 url: '/song?action=addSong',
                 type: "POST",
                 data: $('#form form').serialize(),
-                // success: function(data) {
-                //     $("#result").text(data);
-                // }
+                /*success: function(data) {
+                    $("#result").text(data);
+                }*/
+                success : function (data) {
+                    alert("提交成功，等待管理员审核");
+                }
             });
         } else {
-            alert("提交不成功");
+            alert("数据不完整，提交不成功");
         }
     }
 

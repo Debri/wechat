@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
-    <meta http-equiv="refresh" content="20">
+    <%--<meta http-equiv="refresh" content="20">--%>
     <meta charset="utf-8">
     <title>管理员审核</title>
     <link rel="stylesheet" href="css/master.css">
@@ -33,7 +33,7 @@
             <p>
                 <textarea class="area" id="" cols="30" rows="10" name="content"></textarea>
             <div class="sure_not">
-                <button class="sure" type="submit">确认发布</button>
+                <button class="sure" type="button">确认发布</button>
                 <button class="reset" type="reset" onclick="">取消发布</button>
             </div>
         </form>
@@ -57,19 +57,22 @@
             </c:otherwise>
         </c:choose>
             <%--<input class="pass" type="button" value="审核通过" data-id="${master.id}">--%>
-        <input name="id" type="hidden" value="${master.id}"/>
+        <input name="id" type="hidden" class="del" value="${master.id}"/>
         <input class="finish" type="button" value="播放歌曲">
+
     </div>
     <div class="con_content">
         <div class="left">
             <div class="song"><p>《${master.song}》</p></div>
             <div class="singer"><p>${master.singer}</p></div>
+
         </div>
         <div class="right">
             <p>To ${master.receiver}：</p>
             <p class="words">${master.jiyu}</p>
             <p class="date">${master.time}</p>
         </div>
+        <input class="delete" type="button" value="删除点歌">
     </div>
 </div>
 </c:forEach>

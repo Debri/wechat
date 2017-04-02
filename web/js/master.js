@@ -35,7 +35,7 @@ window.onload = function () {
             alert("公告内容不能为空或超过200字");
         }
         else {
-            alert("恭喜你，公告发布成功！");
+           /* alert("恭喜你，公告发布成功！");*/
         }
     }
     //确认发布判断函数结束
@@ -54,9 +54,11 @@ window.onload = function () {
             url: '/announce?action=addAnnounce',
             type: "POST",
             data: $('form').serialize(),
-            // success: function(data) {
-            //     $("#result").text(data);
-            // }
+            success: function() {
+                /*$("#result").text(data);*/
+                alert("发布成功");
+            }
+
         });
     });
 
@@ -69,6 +71,9 @@ window.onload = function () {
                 //将点歌状态设置为审核通过，但是未播
                 url: "/song?action=doVerify",
                 data: {id: $(this).next().val()},
+                success : function () {
+                    alert("审核成功");
+                }
             });
         });
     })
@@ -81,8 +86,27 @@ window.onload = function () {
                 //将点歌状态设置为审核通过，但是未播
                 url: "/song?action=playSongs",
                 data: {id: $(this).prev().val()},
+                success : function () {
+                    alert("播放成功");
+                }
             });
         });
+    })
+
+    //删除点歌
+    $('.delete').each(function () {
+        $(this).click(function () {
+            $.ajax({
+                tpye : "POST",
+                url: "/song?action=doDelete",
+                data : {
+                  id :  $(".del").val()
+                },
+                success : function () {
+                    alert("删除成功");
+                }
+            })
+        })
     })
 }
 

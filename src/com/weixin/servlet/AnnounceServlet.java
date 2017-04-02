@@ -29,7 +29,10 @@ public class AnnounceServlet extends HttpServlet {
         if (action.equals("addAnnounce")) {
             announceService.addAnnounce(new Announce(req.getParameter("title"), req.getParameter("content")));
 
+        } else {
+            req.getRequestDispatcher("/master.jsp").forward(req, resp);
+            return;
         }
-        req.getRequestDispatcher(forward).forward(req, resp);
+        req.getRequestDispatcher("/master.jsp").forward(req, resp);
     }
 }

@@ -39,7 +39,7 @@
         <p>寄语:</p>
         <textarea class="message" id="message" name="jiyu"></textarea>
         <div class="y_count" id="massageIimit">已输入0个字，还可输入50个字</div>
-        <input type="submit" action="" method="post" value="提交" class="submit" id="songSubmit">
+        <input type="button" action="" method="post" value="提交" class="submit" id="songSubmit">
     </form>
 </div>
 </body>

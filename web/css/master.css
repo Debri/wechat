@@ -88,6 +88,13 @@ li {
 	color: #fff;
 	background-color: #259EED;
 }
+.delete{
+	margin-left:80%;
+	background-color: #259EED;
+	color: #fff;
+	margin-bottom : 10%;
+	width:20%;
+}
 .user .con_content {
 	height: 150px;
 	font-size: 13px;

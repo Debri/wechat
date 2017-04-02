@@ -63,14 +63,14 @@ a{
 }
 .con_header p {
 	font-family: "微软雅黑";
-	font-size: 17px;
+	font-size: 14px;
 	margin-left: 20%;
 	line-height: 48px;
 	color: #fff;
 }
 .user .con_content {
 	height: 90px;
-	font-size: 13px;
+	font-size: 12px;
 }
 .left {
 	float: left;
@@ -88,9 +88,10 @@ a{
 .song p {
 	margin-top: 16px;
 	width: 90%;
-	font-size: 13px;
-	margin-top: 30%;
+	font-size: 12px;
+	margin-top: 28%;
 	margin-bottom: 30%;
+	display: inline-block;
 }
 .singer {
 	width: 60px;
@@ -101,10 +102,10 @@ a{
 	margin-top: -16px;
 }
 .singer p {
-	margin-top: 35%;
+	margin-top: 30%;
 	margin-bottom: 35%;
 	width: 90%;
-	font-size: 14px;
+	font-size: 12px;
 	text-align: center;
 	margin-left: 8%;
 }

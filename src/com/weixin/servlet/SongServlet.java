@@ -45,7 +45,6 @@ public class SongServlet extends HttpServlet {
         String action = req.getParameter("action");
         SongService songService = new SongService();
         AnnounceService announceService = new AnnounceService();
-
         if (action.equals("findPassedSongs")) {//查找审核通过的点歌
             List<Song> list = new ArrayList<Song>();
             list = songService.selectSongByStatus(1);
